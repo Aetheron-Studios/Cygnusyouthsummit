@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.handle {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  opacity: 0.7;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.spacer {
+  height: 80px;
+}
+
+.event {
+  font-size: 1rem;
+  letter-spacing: 0.6px;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.9s;
+}
+
+/* Subtle life, not annoying life */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
